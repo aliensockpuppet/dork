@@ -1,0 +1,5 @@
+config-version: 1
+
+save-interval-seconds: 300
+leaderboard-size: 10
+leaderboard-refresh-seconds: 60

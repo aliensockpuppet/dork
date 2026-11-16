@@ -1,0 +1,11 @@
+restart:
+  time: "05:00"
+
+  timezone: ""
+
+  clear-combat-tags: true
+
+  method: shutdown
+  command: ""
+
+  warnings: [300, 120, 60, 30, 10, 5, 4, 3, 2, 1]

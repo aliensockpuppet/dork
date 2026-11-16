@@ -1,0 +1,105 @@
+config-version: 3
+
+allowed-worlds: []
+
+rtp:
+  world: world
+  center-x: 0
+  center-z: 0
+  min-radius: 1500
+  max-radius: 6000
+  max-attempts: 12
+  nearby-min-distance: 10
+  nearby-max-distance: 20
+  nearby-attempts: 10
+  nearby-max-height-difference: 6
+  unsafe-blocks:
+    - LAVA
+    - WATER
+    - BUBBLE_COLUMN
+    - MAGMA_BLOCK
+    - CACTUS
+    - CAMPFIRE
+    - SOUL_CAMPFIRE
+    - FIRE
+    - SOUL_FIRE
+    - POWDER_SNOW
+    - SWEET_BERRY_BUSH
+    - POINTED_DRIPSTONE
+    - COBWEB
+    - WITHER_ROSE
+    - NETHER_PORTAL
+    - END_PORTAL
+    - END_GATEWAY
+  blocked-biomes:
+    - ocean
+    - deep_ocean
+    - cold_ocean
+    - deep_cold_ocean
+    - frozen_ocean
+    - deep_frozen_ocean
+    - lukewarm_ocean
+    - deep_lukewarm_ocean
+    - warm_ocean
+    - river
+    - frozen_river
+    - the_void
+
+queue:
+  modes:
+    fair:
+      name: "Fair"
+      players: 2
+      no-elytra: true
+      no-ender-chest: true
+    open:
+      name: "Open"
+      players: 2
+      no-elytra: false
+      no-ender-chest: false
+  matchmaking-interval-ticks: 20
+  gear-check-cache-ticks: 40
+  glow-seconds: 30
+  broadcast:
+    enabled: true
+    min-interval-seconds: 2
+
+matchmaking:
+  gear-brackets: true
+  slot-weights:
+    helmet: 3
+    chestplate: 8
+    leggings: 6
+    boots: 3
+  min-coverage: 0.5
+  scan-carried-containers: true
+  count-ender-chest-when-carried: true
+  warn-ender-chest: true
+  explosives:
+    enabled: true
+    mode: ANY
+    min-crystals: 1
+    crystals-need-obsidian: true
+    min-obsidian: 1
+    min-anchors: 1
+    anchors-need-glowstone: true
+    min-glowstone: 1
+    ignore-anchors-in-nether: true
+    beds-count-outside-overworld: true
+  match-elytra: true
+  min-elytra: 1
+  bracket-names:
+    netherite: "Netherite"
+    diamond: "Diamond"
+    low: "Under diamond"
+    open: "Open"
+    explosives-suffix: " with crystals or anchors"
+    elytra-suffix: " with elytra"
+
+on-success-commands:
+  match: []
+
+respawn:
+  random-enabled: true
+  pool-size: 6
+  max-age-minutes: 10

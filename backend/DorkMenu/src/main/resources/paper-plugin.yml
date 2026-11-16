@@ -1,0 +1,30 @@
+name: DorkMenu
+version: 1.0.0
+main: io.github.aliensockpuppet.dorkmenu.DorkMenuPlugin
+bootstrapper: io.github.aliensockpuppet.dorkmenu.DorkMenuBootstrap
+api-version: '1.21'
+author: aliensockpuppet
+description: Native-dialog menu for the Dork suite. Reads DorkCore's API.
+
+dependencies:
+  server:
+    DorkCore:
+      load: BEFORE
+      required: true
+      join-classpath: true
+    DorkStats:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    RTPQueue:
+      load: BEFORE
+      required: false
+      join-classpath: true
+
+permissions:
+  dorkmenu.use:
+    description: Open the menu with the menu command.
+    default: true
+  dorkmenu.admin:
+    description: Reload DorkMenu with /dork reload.
+    default: op

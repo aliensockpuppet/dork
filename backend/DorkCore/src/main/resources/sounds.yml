@@ -1,0 +1,83 @@
+config-version: 3
+
+sounds:
+
+  success:
+    sound: "minecraft:block.note_block.pling"
+    volume: 0.6
+    pitch: 1.2
+
+  error:
+    sound: "minecraft:block.note_block.bass"
+    volume: 0.6
+    pitch: 0.8
+
+  teleport:
+    sound: "minecraft:entity.enderman.teleport"
+    volume: 0.6
+    pitch: 1.0
+
+  tpa-sent:
+    sound: "minecraft:block.note_block.hat"
+    volume: 0.6
+    pitch: 1.4
+
+  tpa-received:
+    sound: "minecraft:block.note_block.bell"
+    volume: 0.6
+    pitch: 1.2
+
+  combat-start:
+    sound: "minecraft:block.note_block.bass"
+    volume: 0.5
+    pitch: 0.7
+
+  menu-open:
+    sound: "minecraft:ui.button.click"
+    volume: 0.6
+    pitch: 1.0
+
+  toggle-on:
+    sound: "minecraft:block.note_block.pling"
+    volume: 0.6
+    pitch: 1.5
+
+  toggle-off:
+    sound: "minecraft:block.note_block.bass"
+    volume: 0.6
+    pitch: 0.9
+
+  rtp-done:
+    sound: "minecraft:entity.enderman.teleport"
+    volume: 0.6
+    pitch: 0.8
+
+  queue-join:
+    sound: "minecraft:block.note_block.hat"
+    volume: 0.6
+    pitch: 1.2
+
+  queue-leave:
+    sound: "minecraft:block.note_block.hat"
+    volume: 0.6
+    pitch: 0.8
+
+  queue-alert:
+    sound: "minecraft:block.note_block.bell"
+    volume: 0.35
+    pitch: 1.4
+
+  match-found:
+    sound: "minecraft:entity.experience_orb.pickup"
+    volume: 0.6
+    pitch: 1.2
+
+  match-landed:
+    sound: "minecraft:entity.enderman.teleport"
+    volume: 0.6
+    pitch: 1.0
+
+  warning:
+    sound: "minecraft:block.note_block.bass"
+    volume: 0.6
+    pitch: 0.6

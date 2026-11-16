@@ -1,0 +1,1418 @@
+config-version: 6
+
+messages:
+
+  reload-done:
+    chat:
+      enabled: true
+      message:
+        - "<green>DorkCore config reloaded"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  players-only:
+    chat:
+      enabled: true
+      message:
+        - "<red>Only a player can run this"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  no-permission:
+    chat:
+      enabled: true
+      message:
+        - "<red>You may not use that"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  not-authenticated:
+    chat:
+      enabled: true
+      message:
+        - "<red>Log in first"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  world-not-allowed:
+    chat:
+      enabled: true
+      message:
+        - "<red>You cannot teleport in this world"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  combat-tagged:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<red>In combat. Wait <seconds>s"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<red>You are in combat. Wait <seconds>s before you can do that"
+
+  cooldown:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<red>Wait <seconds>s"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<red>That is on cooldown. Wait <seconds>s"
+
+  store-error:
+    chat:
+      enabled: true
+      message:
+        - "<red>That did not save. Tell an admin"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  motd-set:
+    chat:
+      enabled: true
+      message:
+        - "<green>Server MOTD updated"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  motd-global-cooldown:
+    chat:
+      enabled: true
+      message:
+        - "<red>The MOTD was changed recently. Try again in <seconds>s"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  motd-player-cooldown:
+    chat:
+      enabled: true
+      message:
+        - "<red>You changed the MOTD recently. Try again in <seconds>s"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  motd-invalid:
+    chat:
+      enabled: true
+      message:
+        - "<red>That MOTD has a broken color tag. Check it and try again"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  motd-empty:
+    chat:
+      enabled: true
+      message:
+        - "<red>Type some text for the MOTD"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  motd-reset:
+    chat:
+      enabled: true
+      message:
+        - "<green>Server MOTD reset to the default"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  motd-reloaded:
+    chat:
+      enabled: true
+      message:
+        - "<green>DorkMotd config reloaded"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  survey-reminder:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Take the quick survey for a reward: <click:run_command:'/survey'><green>[Take it]</click>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  survey-reward:
+    chat:
+      enabled: true
+      message:
+        - "<green>Survey done. Your reward is in your inventory"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  survey-already:
+    chat:
+      enabled: true
+      message:
+        - "<gray>You already took the survey"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  survey-none:
+    chat:
+      enabled: true
+      message:
+        - "<gray>There is no survey right now"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  survey-reloaded:
+    chat:
+      enabled: true
+      message:
+        - "<green>DorkSurvey reloaded"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  survey-reset-done:
+    chat:
+      enabled: true
+      message:
+        - "<green>Cleared the survey record for <player>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  survey-reset-usage:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Use /survey reset <player>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  restart-warning:
+    chat:
+      enabled: true
+      message:
+        - "<red>Server restart in <time>"
+    actionbar:
+      enabled: true
+      message:
+        - "<red>Restart in <time>"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  restart-now:
+    chat:
+      enabled: true
+      message:
+        - "<red>Restarting now. See you in a minute"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  restart-scheduled:
+    chat:
+      enabled: true
+      message:
+        - "<green>Restart countdown started: <seconds>s"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  restart-reloaded:
+    chat:
+      enabled: true
+      message:
+        - "<green>DorkRestart reloaded"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  restart-usage:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Use /dorkrestart now [seconds] or /dorkrestart reload"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  spawn-set:
+    chat:
+      enabled: true
+      message:
+        - "<green>Spawn set"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  spawn-not-set:
+    chat:
+      enabled: true
+      message:
+        - "<red>No spawn is set"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  spawn-world-missing:
+    chat:
+      enabled: true
+      message:
+        - "<red>The spawn world is gone"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  spawn-teleported:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<green>Teleported to spawn"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<green>Teleported to spawn"
+
+  back-none:
+    chat:
+      enabled: true
+      message:
+        - "<red>Nowhere to go back to"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  back-world-missing:
+    chat:
+      enabled: true
+      message:
+        - "<red>That world is gone"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  back-teleported:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<green>Back to your last spot"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<green>Teleported to your last spot"
+
+  home-set:
+    chat:
+      enabled: true
+      message:
+        - "<green>Home <name> saved"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  home-deleted:
+    chat:
+      enabled: true
+      message:
+        - "<green>Home <name> removed"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  home-bad-name:
+    chat:
+      enabled: true
+      message:
+        - "<red>A home name uses letters, digits, dash and underscore only"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  home-cap-reached:
+    chat:
+      enabled: true
+      message:
+        - "<red>You have your <cap> homes. Remove one first"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  home-none:
+    chat:
+      enabled: true
+      message:
+        - "<gray>You have no homes. Set one with /sethome"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  home-unknown:
+    chat:
+      enabled: true
+      message:
+        - "<red>No home named <name>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  home-world-missing:
+    chat:
+      enabled: true
+      message:
+        - "<red>The world for <name> is gone"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  home-which:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Pick a home: <homes>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  home-teleported:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<green>Home <name>"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<green>Teleported to home <name>"
+
+  homes-header:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Your homes (<count>):"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  delhome-usage:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Use /delhome \\<name>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-usage:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Use /tpa \\<player>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  player-not-found:
+    chat:
+      enabled: true
+      message:
+        - "<red>No player named <player> is online"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-self:
+    chat:
+      enabled: true
+      message:
+        - "<red>You cannot request yourself"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-refused:
+    chat:
+      enabled: true
+      message:
+        - "<red><player> is not taking requests"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-sent:
+    chat:
+      enabled: true
+      message:
+        - "<green>Request sent to <player>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-received:
+    chat:
+      enabled: true
+      message:
+        - "<green><player> wants to teleport to you. <click:run_command:'/tpaccept'><green>[Accept]</click> <click:run_command:'/tpdeny'><red>[Deny]</click>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpahere-sent:
+    chat:
+      enabled: true
+      message:
+        - "<green>Asked <player> to teleport to you"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpahere-received:
+    chat:
+      enabled: true
+      message:
+        - "<green><player> wants you to teleport to them. <click:run_command:'/tpaccept'><green>[Accept]</click> <click:run_command:'/tpdeny'><red>[Deny]</click>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-none:
+    chat:
+      enabled: true
+      message:
+        - "<red>No request to answer"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-none-sent:
+    chat:
+      enabled: true
+      message:
+        - "<red>You have no request out"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-sender-gone:
+    chat:
+      enabled: true
+      message:
+        - "<red>They are no longer online"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-cancelled-gate:
+    chat:
+      enabled: true
+      message:
+        - "<red>The teleport could not run"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-accepted:
+    chat:
+      enabled: true
+      message:
+        - "<green><player> accepted"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-accepted-you:
+    chat:
+      enabled: true
+      message:
+        - "<green>You accepted <player>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-teleported:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<green>Teleported to <player>"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<green>Teleported to <player>"
+
+  tpa-denied:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Request denied"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-denied-by:
+    chat:
+      enabled: true
+      message:
+        - "<red><player> denied your request"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-cancelled:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Request cancelled"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-cancelled-by:
+    chat:
+      enabled: true
+      message:
+        - "<gray><player> cancelled their request"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-auto-accepted:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Auto-accepted <player>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  combat-started:
+    chat:
+      enabled: true
+      message:
+        - "<red>You are in combat. Do not log out"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  combat-ended:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<green>Out of combat"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<green>You are no longer in combat"
+
+  combat-countdown:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<red>In combat <seconds>s"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy: { suppress: true, message: [] }
+
+  combat-logged:
+    chat:
+      enabled: true
+      message:
+        - "<red>You logged out in combat and died"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  combat-log-kill:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<green><player> logged out. Kill counted"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<green><player> logged out in combat. Counted as your kill"
+
+  chat-on:
+    chat:
+      enabled: true
+      message:
+        - "<green>Public chat shown"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  chat-off:
+    chat:
+      enabled: true
+      message:
+        - "<red>Public chat hidden"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  message-style-on:
+    chat:
+      enabled: true
+      message:
+        - "<green>Modern messages and sounds on"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  message-style-off:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Legacy chat on. Sounds off"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-requests-on:
+    chat:
+      enabled: true
+      message:
+        - "<green>Teleport requests on"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-requests-off:
+    chat:
+      enabled: true
+      message:
+        - "<red>Teleport requests off"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-auto-on:
+    chat:
+      enabled: true
+      message:
+        - "<green>Auto-accept teleports on"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  tpa-auto-off:
+    chat:
+      enabled: true
+      message:
+        - "<red>Auto-accept teleports off"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  join-leave-on:
+    chat:
+      enabled: true
+      message:
+        - "<green>Join and leave messages shown"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  join-leave-off:
+    chat:
+      enabled: true
+      message:
+        - "<red>Join and leave messages hidden"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  death-messages-on:
+    chat:
+      enabled: true
+      message:
+        - "<green>Death messages shown"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  death-messages-off:
+    chat:
+      enabled: true
+      message:
+        - "<red>Death messages hidden"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  queue-alerts-on:
+    chat:
+      enabled: true
+      message:
+        - "<green>Queue alerts on"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  queue-alerts-off:
+    chat:
+      enabled: true
+      message:
+        - "<red>Queue alerts off"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  msg-to:
+    chat:
+      enabled: true
+      message:
+        - "<gray>[me <green>-> <green><player><gray>] "
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  msg-from:
+    chat:
+      enabled: true
+      message:
+        - "<gray>[<green><player> <green>-> <gray>me] "
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  anonmsg-to:
+    chat:
+      enabled: true
+      message:
+        - "<gray>[me <green>-> <green><player><gray>, anonymous] "
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  anonmsg-from:
+    chat:
+      enabled: true
+      message:
+        - "<gray>[<dark_gray>Anonymous <green>-> <gray>me] "
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  anonmsg-usage:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Use /anonmsg \\<player> \\<message>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  chat-slow:
+    chat:
+      enabled: true
+      message:
+        - "<red>Slow down. Wait %seconds%s"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  chat-repeat:
+    chat:
+      enabled: true
+      message:
+        - "<red>You already said that. Wait %seconds%s"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  msg-usage:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Use /msg \\<player> \\<message>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  reply-usage:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Use /r \\<message>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  reply-none:
+    chat:
+      enabled: true
+      message:
+        - "<red>Nobody to reply to"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  msg-not-delivered:
+    chat:
+      enabled: true
+      message:
+        - "<red>Message not delivered"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  msg-empty:
+    chat:
+      enabled: true
+      message:
+        - "<red>Your message is empty"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  receive-pms-on:
+    chat:
+      enabled: true
+      message:
+        - "<green>Private messages on"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  receive-pms-off:
+    chat:
+      enabled: true
+      message:
+        - "<red>Private messages off"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  ignore-usage:
+    chat: { enabled: true, message: ["<gray>Use /ignore <player>"] }
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  unignore-usage:
+    chat: { enabled: true, message: ["<gray>Use /unignore <player>"] }
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  ignore-self-or-unknown:
+    chat: { enabled: true, message: ["<red>No such player"] }
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  ignore-added:
+    chat: { enabled: true, message: ["<gray>You now ignore <green><player><gray>"] }
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  ignore-removed:
+    chat: { enabled: true, message: ["<gray>You no longer ignore <green><player><gray>"] }
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  ignore-list-empty:
+    chat: { enabled: true, message: ["<gray>You are not ignoring anyone"] }
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  ignore-list:
+    chat: { enabled: true, message: ["<gray>You ignore: <green><players>"] }
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  settings-saved:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<green>Settings saved"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<green>Settings saved"
+
+  settings-reset:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<gray>Settings reset to defaults"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<gray>Settings reset to defaults"
+
+  phantom-spawns-on:
+    chat:
+      enabled: true
+      message:
+        - "<green>Phantom spawns on"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  phantom-spawns-off:
+    chat:
+      enabled: true
+      message:
+        - "<red>Phantom spawns off"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  home-name-invalid:
+    chat:
+      enabled: true
+      message:
+        - "<red>A home name uses letters, digits, dash and underscore only"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  queue-status:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<green>In queue <gray><mode> searching"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<green>You are in the <mode> queue, searching"
+
+  queue-disabled:
+    chat:
+      enabled: true
+      message:
+        - "<red>The queue is off right now"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  queue-usage:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Use /rtpqueue <mode> or /rtpqueue leave. Modes: <green><modes>"
+        - "<green>fair<gray>: no elytra, no ender chest. <green>open<gray>: both allowed"
+        - "<gray>Either way you are matched by armor tier and crystal or anchor use"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  queue-joined:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<green>Queued for <mode>"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<green>You joined the <mode> queue"
+
+  queue-switched:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<green>Switched to <mode>"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<green>You switched to the <mode> queue"
+
+  queue-left:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<gray>Left the <mode> queue"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<gray>You left the <mode> queue"
+
+  queue-not-queued:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<red>You are not in a queue"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<red>You are not in a queue"
+
+  queue-busy:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<red>Your match is already starting"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<red>Your match is already starting"
+
+  blocked-ender-chest:
+    chat:
+      enabled: true
+      message:
+        - "<red>This mode has no ender chests. Stow it to queue, or pick the Open mode"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  blocked-elytra:
+    chat:
+      enabled: true
+      message:
+        - "<red>This mode has no elytra. Take it off to queue, or pick the Open mode"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  queue-alert-join:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<green><player> <gray>joined <green><mode> <gray>as <green><bracket>"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<gray>[Queue] <green><player> <gray>joined <green><mode> <gray>(<bracket>)"
+
+  queue-alert-leave:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<red><player> <gray>left <green><mode> <gray>as <green><bracket>"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<gray>[Queue] <red><player> <gray>left <green><mode> <gray>(<bracket>)"
+
+  queue-unknown-mode:
+    chat:
+      enabled: true
+      message:
+        - "<red>No queue called <gray><input><red>. Modes: <green><modes>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  queue-removed-world:
+    chat:
+      enabled: true
+      message:
+        - "<red>You left the queue because you changed worlds"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  queue-mode-removed:
+    chat:
+      enabled: true
+      message:
+        - "<red>Your queue was removed by an admin"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  queue-gear-changed:
+    chat:
+      enabled: true
+      message:
+        - "<red>Your gear changed before the teleport, so you were removed from the queue"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  match-found:
+    chat: { enabled: false, message: [] }
+    actionbar: { enabled: false, message: [] }
+    title:
+      enabled: true
+      message:
+        - "<green>Match found"
+    subtitle:
+      enabled: true
+      message:
+        - "<gray><mode>"
+    legacy:
+      message:
+        - "<green>Match found <gray><mode>"
+
+  match-landed:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<green>Match started <mode>"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<green>Your <mode> match has started"
+
+  match-failed:
+    chat:
+      enabled: true
+      message:
+        - "<red>No safe spot was found. You are back at the front of the queue"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  match-cancelled:
+    chat:
+      enabled: true
+      message:
+        - "<red>A player left or changed gear. You are back at the front of the queue"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  ender-chest-warning:
+    chat:
+      enabled: true
+      message:
+        - "<red><players> <gray>can regear from an ender chest"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  teleport-blocked:
+    chat:
+      enabled: true
+      message:
+        - "<red>Your teleport was blocked"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  admin-reloaded:
+    chat:
+      enabled: true
+      message:
+        - "<green>Queue reloaded"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  admin-cleared:
+    chat:
+      enabled: true
+      message:
+        - "<green>All queues were cleared"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  admin-usage:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Use /rtpqueue-admin reload, queue, clear, or inspect \\<player>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  admin-queue-header:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Queues"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  admin-queue-line:
+    chat:
+      enabled: true
+      message:
+        - "<green><mode> <gray><count> waiting <players>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  admin-player-not-found:
+    chat:
+      enabled: true
+      message:
+        - "<red>No online player named <gray><input>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  admin-inspect:
+    chat:
+      enabled: true
+      message:
+        - "<green><player> <gray>is matched as <green><bracket>"
+        - "<gray>Netherite cover <green><netherite>% <gray>Diamond cover <green><diamond>%"
+        - "<gray>Crystal or anchor kit <green><explosives> <gray>Ender chest <green><echest> <gray>Queue <green><queue>"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  sp-reloaded:
+    chat:
+      enabled: true
+      message:
+        - "<green>SpawnPlatform config reloaded"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  sp-rebuilt:
+    chat:
+      enabled: true
+      message:
+        - "<green>Floor rebuilt"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  sp-cleared:
+    chat:
+      enabled: true
+      message:
+        - "<green>Clearing the spawn cube"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  sp-clear-busy:
+    chat:
+      enabled: true
+      message:
+        - "<red>A clear is already running"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  sp-no-world:
+    chat:
+      enabled: true
+      message:
+        - "<red>That world is not loaded"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  sp-center-set:
+    chat:
+      enabled: true
+      message:
+        - "<green>Center set in <world>. Run /spawnplatform rebuild to build it"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  sp-usage:
+    chat:
+      enabled: true
+      message:
+        - "<gray>/spawnplatform reload, rebuild, clear, setcenter, info"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  stats-reloaded:
+    chat:
+      enabled: true
+      message:
+        - "<green>DorkStats reloaded"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  stats-usage:
+    chat:
+      enabled: true
+      message:
+        - "<gray>Use /dorkstats reload"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+
+  rtp-searching:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<gray>Finding a safe spot..."
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<gray>Finding a safe spot..."
+
+  rtp-done:
+    chat: { enabled: false, message: [] }
+    actionbar:
+      enabled: true
+      message:
+        - "<green>Teleported to a random spot"
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }
+    legacy:
+      message:
+        - "<green>Teleported to a random spot"
+
+  rtp-failed:
+    chat:
+      enabled: true
+      message:
+        - "<red>Could not find a safe spot. Try again"
+    actionbar: { enabled: false, message: [] }
+    title: { enabled: false, message: [] }
+    subtitle: { enabled: false, message: [] }

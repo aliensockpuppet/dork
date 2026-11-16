@@ -1,0 +1,46 @@
+reward:
+  material: TOTEM_OF_UNDYING
+  amount: 3
+  min-playtime-minutes: 30
+
+reminder:
+  on-join: true
+  delay-seconds: 5
+
+dialog:
+  title: "<green>Server survey"
+  columns: 1
+
+questions:
+  - id: found_us
+    enabled: true
+    prompt: "<green>Where did you find us?"
+    options:
+      - id: discord
+        text: "Discord"
+      - id: tiktok
+        text: "TikTok"
+      - id: youtube
+        text: "YouTube"
+      - id: friend
+        text: "A friend"
+      - id: other_server
+        text: "Another Minecraft server"
+      - id: other
+        text: "Other"
+  - id: account_type
+    enabled: true
+    prompt: "<green>Are you premium or cracked?"
+    options:
+      - id: premium
+        text: "Premium"
+      - id: cracked
+        text: "Cracked"
+  - id: voice_mods
+    enabled: true
+    prompt: "<green>Do you use voice chat mods?"
+    options:
+      - id: yes
+        text: "Yes"
+      - id: no
+        text: "No"

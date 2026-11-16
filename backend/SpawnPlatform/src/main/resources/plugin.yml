@@ -1,0 +1,16 @@
+name: SpawnPlatform
+version: '1.0.0'
+main: io.github.aliensockpuppet.spawnplatform.SpawnPlatformPlugin
+api-version: '1.21'
+author: aliensockpuppet
+description: Builds a bedrock platform at spawn and clears a cube around it on a timer.
+depend: [DorkCore]
+commands:
+  spawnplatform:
+    description: SpawnPlatform admin tools.
+    usage: /<command> <reload|rebuild|clear|setcenter|info>
+    aliases: [splatform, sp]
+permissions:
+  spawnplatform.admin:
+    description: Use /spawnplatform.
+    default: op

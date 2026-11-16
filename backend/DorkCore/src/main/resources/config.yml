@@ -1,0 +1,38 @@
+config-version: 4
+
+cooldowns:
+  global: { min: 1, max: 2 }
+  tpa: { min: 4, max: 7 }
+  home: { min: 2, max: 4 }
+  spawn: { min: 2, max: 4 }
+  back: { min: 2, max: 4 }
+  rtp: { min: 8, max: 15 }
+  suicide: { min: 3, max: 6 }
+  ignore: { min: 2, max: 4 }
+  anonmsg: { min: 15, max: 30 }
+  toggle: { min: 2, max: 5 }
+  toggle-list: { min: 1, max: 3 }
+  chat: { min: 1, max: 3 }
+  chat-repeat: { min: 20, max: 40 }
+
+back:
+  record-on-death: false
+  record-on-teleport: false
+
+tpa:
+  expiry-seconds: 60
+
+homes:
+  default-cap: 3
+  max-name-length: 16
+
+spawn:
+  respawn-at-spawn: true
+  first-join-at-spawn: true
+  auto-set-on-first-load: true
+
+worlds:
+  teleport-allowed: []
+
+gate:
+  fail-closed-when-auth-missing: true

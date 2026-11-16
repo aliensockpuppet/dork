@@ -1,0 +1,49 @@
+config-version: 1
+
+world: world
+
+use-world-spawn: true
+center-x: 0
+center-z: 0
+
+platform:
+  follow-spawn-y: true
+  y: 64
+  radius: 8
+  material: BEDROCK
+
+clear:
+  enabled: false
+  interval: "10m"
+  radius: 24
+  to-build-height: true
+  height: 64
+  columns-per-tick: 256
+  clear-dropped-items: true
+  clear-entities:
+    - ARROW
+    - SPECTRAL_ARROW
+    - TRIDENT
+    - EXPERIENCE_ORB
+    - TNT
+    - FALLING_BLOCK
+    - FIREBALL
+    - SMALL_FIREBALL
+    - WIND_CHARGE
+    - ZOMBIE
+    - SKELETON
+    - CREEPER
+    - SPIDER
+    - WITCH
+    - ENDERMAN
+    - PHANTOM
+    - SLIME
+    - MAGMA_CUBE
+    - MINECART
+    - CHEST_MINECART
+    - TNT_MINECART
+  block-liquids: true
+  rebuild-platform: true
+  message: "<gray>Clearing the spawn area"
+
+run-on-start: false

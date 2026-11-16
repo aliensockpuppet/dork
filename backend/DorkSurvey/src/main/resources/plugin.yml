@@ -1,0 +1,20 @@
+name: DorkSurvey
+version: 1.0.0
+main: io.github.aliensockpuppet.dorksurvey.DorkSurveyPlugin
+api-version: '1.21'
+author: aliensockpuppet
+description: A short button-dialog survey with a one-time reward and a join reminder.
+depend: [DorkCore]
+
+commands:
+  survey:
+    description: Take the server survey, or manage it.
+    usage: /survey [reset <player>|reload]
+
+permissions:
+  dorksurvey.take:
+    description: Take the survey.
+    default: true
+  dorksurvey.admin:
+    description: Reset a player's survey and reload the config.
+    default: op

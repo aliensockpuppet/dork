@@ -1,0 +1,17 @@
+name: DorkRestart
+version: 1.0.0
+main: io.github.aliensockpuppet.dorkrestart.DorkRestartPlugin
+api-version: '1.21'
+author: aliensockpuppet
+description: Daily scheduled restart with warnings and a combat-tag clear before the stop.
+depend: [DorkCore]
+
+commands:
+  dorkrestart:
+    description: Start a restart now or reload the schedule.
+    usage: /dorkrestart <now [seconds]|reload>
+
+permissions:
+  dorkrestart.admin:
+    description: Trigger a restart and reload the schedule.
+    default: op

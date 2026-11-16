@@ -1,0 +1,33 @@
+format:
+  header: "<green>A Minecraft Server"
+  quote-player: true
+
+motd:
+  max-length: 100
+  require-permission: false
+
+cooldowns:
+  global-min-seconds: 240
+  global-max-seconds: 360
+  player-min-seconds: 1500
+  player-max-seconds: 2100
+
+rotation:
+  enabled: false
+  random: false
+  interval-seconds: 60
+  motds:
+    - "<gray>Welcome to the server"
+    - "<aqua>Now on a proxy"
+
+messages:
+  no-permission: "<red>You cannot do that"
+  players-only: "<red>Only a player can set the MOTD"
+  usage: "<gray>Usage: /motd <text>"
+  motd-set: "<green>MOTD updated"
+  motd-reset: "<green>MOTD reset to default"
+  motd-reloaded: "<green>DorkMotd config reloaded"
+  motd-global-cooldown: "<red>The MOTD was changed recently, try again in %seconds%s"
+  motd-player-cooldown: "<red>You can change the MOTD again in %seconds%s"
+  motd-invalid: "<red>That MOTD has a broken format tag"
+  motd-empty: "<red>The MOTD cannot be empty"

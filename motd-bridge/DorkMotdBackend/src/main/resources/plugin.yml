@@ -1,0 +1,23 @@
+name: DorkMotd
+version: 1.0.0
+main: io.github.aliensockpuppet.dorkmotd.DorkMotdPlugin
+api-version: '1.21'
+author: aliensockpuppet
+description: Dialog to set the PROXY server-list MOTD; forwards to DorkMotd-Velocity over plugin messaging.
+depend: [DorkCore]
+
+commands:
+  motd:
+    description: Set the server MOTD, or open the MOTD dialog.
+    usage: /motd [text|reset|reload]
+
+permissions:
+  dorkmotd.set:
+    description: Change the server MOTD.
+    default: true
+  dorkmotd.bypass:
+    description: Skip the MOTD cooldowns.
+    default: op
+  dorkmotd.admin:
+    description: Reset the MOTD and reload the config.
+    default: op

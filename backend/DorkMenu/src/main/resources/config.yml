@@ -1,0 +1,208 @@
+config-version: 10
+
+command:
+  name: dork
+  aliases: [menu]
+
+pause-screen:
+  enabled: true
+
+menu:
+  title: "<green>Menu"
+  body:
+    - "<gray>Pick a screen"
+  close-label: "<gray>Close"
+  back-label: "<gray>Back"
+  button-width: 200
+  columns: 2
+
+settings-menu:
+  title: "<green>Settings"
+  body:
+    - "<gray>Change any toggle, then press Save"
+  save-label: "<green>Save"
+  reset-label: "<red>Reset to defaults"
+  reset-tooltip: "<gray>Put every toggle back to its default"
+
+leaderboards-menu:
+  title: "<green>Leaderboards"
+  list-title: "<green>Top <name>"
+  body:
+    - "<gray>Pick a stat"
+  columns: 2
+  rows: 10
+  show-heads: true
+  row: "<gray>%rank%. <green>%name% <gray>%value%"
+  kdr-label: "<green>Top players (K/D)"
+  kdr-title: "<green>Top players"
+  kdr-row: "<gray>%rank%. <green>%name% <gray>%kdr% <gray>(%kills%/%deaths%)"
+  empty: "<gray>No entries yet"
+  unavailable: "<red>Leaderboards are not available right now"
+
+suicide-menu:
+  title: "<red>Suicide"
+  icon: SKELETON_SKULL
+  body:
+    - "<gray>Kill yourself and drop where you stand?"
+  confirm-label: "<red>Yes, kill me"
+
+stats-menu:
+  title: "<green>Your stats"
+  icon: DIAMOND_SWORD
+  columns: 2
+  unavailable: "<red>Stats are not available right now"
+  kills: "<gray>Kills: <green>%v%"
+  deaths: "<gray>Deaths: <green>%v%"
+  kdr: "<gray>K/D: <green>%v%"
+  placed: "<gray>Blocks placed: <green>%v%"
+  broken: "<gray>Blocks broken: <green>%v%"
+  playtime: "<gray>Playtime: <green>%v%"
+  kdr-board-label: "<green>Top players (K/D)"
+
+duel-menu:
+  title: "<green>Queue"
+  body:
+    - "<gray>Tap a queue to join. Tap it again to leave"
+    - "<green>Fair<gray>: no elytra or ender chest"
+    - "<green>Open<gray>: both allowed"
+    - "<gray>You are matched by armor tier, and crystal or anchor use"
+  columns: 2
+  mode-label: "<gray>Join <name>"
+  mode-label-queued: "<green><name> (in queue)"
+  mode-tooltip: "<gray>Tap to join. You fight players near your armor and kit level"
+  mode-tooltip-queued: "<gray>Tap to leave this queue"
+  unavailable: "<red>Matchmaking is not available right now"
+
+queues-menu:
+  title: "<green>Who's queued"
+  open-label: "<green>Who's queued"
+  open-tooltip: "<gray>See everyone waiting, by queue"
+  refresh-label: "<green>Refresh"
+  refresh-tooltip: "<gray>Reload the list"
+  mode-header: "<green><name> <gray>(<count> waiting)"
+  empty-line: "<dark_gray>  nobody waiting"
+
+homes-menu:
+  title: "<green>Homes"
+  body:
+    - "<gray>Tap a home to teleport"
+  icon: WHITE_BED
+  columns: 2
+  home-label: "<green>Home: <name>"
+  home-tooltip: "<gray>Teleport to <name>"
+  none: "<gray>You have no homes yet. Set one below"
+  set-label: "<green>Set a home"
+  set-title: "<green>Set a home"
+  set-body:
+    - "<gray>Type a name for this spot"
+  set-input-label: "<gray>New home name"
+  save-label: "<green>Save"
+
+discord:
+  url: ""
+  message: "<green>Join our Discord: <click:open_url:'<url>'><underlined><url></underlined></click>"
+
+map:
+  url: ""
+  message: "<green>Live map: <click:open_url:'<url>'><underlined><url></underlined></click>"
+
+store:
+  url: ""
+  message: "<green>Our store: <click:open_url:'<url>'><underlined><url></underlined></click>"
+
+buttons:
+  spawn:
+    enabled: true
+    label: "<green>Spawn"
+    tooltip: "<gray>Go to spawn"
+    permission: dorkcore.spawn
+    icon: ""
+  homes:
+    enabled: true
+    label: "<green>Homes"
+    tooltip: "<gray>Your homes"
+    permission: dorkcore.home
+    icon: ""
+  duel:
+    enabled: true
+    label: "<green>RTPQueue"
+    tooltip: "<gray>Queue to fight a player near your armor and kit level"
+    permission: rtpqueue.use
+    icon: ""
+  rtp:
+    enabled: true
+    label: "<green>RTP"
+    tooltip: "<gray>Teleport to a safe random spot"
+    permission: rtpqueue.rtp
+    icon: ""
+  stats:
+    enabled: true
+    label: "<green>Stats"
+    tooltip: "<gray>Your stats and the server leaderboards"
+    permission: ""
+    icon: ""
+  map:
+    enabled: false
+    label: "<green>Map"
+    tooltip: "<gray>Open the live map"
+    permission: ""
+    icon: ""
+  store:
+    enabled: false
+    label: "<green>Store"
+    tooltip: "<gray>Open the web store"
+    permission: ""
+    icon: ""
+  suicide:
+    enabled: true
+    label: "<red>Suicide"
+    tooltip: "<gray>Kill yourself and drop here"
+    permission: dorkcore.suicide
+    icon: ""
+  settings:
+    label: "<green>Settings"
+    tooltip: "<gray>Message, teleport and combat toggles"
+    icon: ""
+  discord:
+    enabled: false
+    label: "<#5865F2>Discord"
+    tooltip: "<gray>Get the invite link"
+    permission: ""
+    icon: ""
+  toggle-chat:
+    name: "Public chat"
+    tooltip: "<gray>Show other players' public chat"
+    icon: ""
+  toggle-receive-pms:
+    name: "Private messages"
+    tooltip: "<gray>Receive /msg from other players"
+    icon: ""
+  toggle-tpa-requests:
+    name: "Teleport requests"
+    tooltip: "<gray>Accept or block incoming /tpa requests"
+    icon: ""
+  toggle-tpa-auto:
+    name: "Auto-accept teleports"
+    tooltip: "<gray>Accept incoming requests with no prompt"
+    icon: ""
+    icon: ""
+  toggle-join-leave:
+    name: "Join and leave messages"
+    tooltip: "<gray>Show other players' join and leave messages"
+    icon: ""
+  toggle-death-messages:
+    name: "Death messages"
+    tooltip: "<gray>Show other players' death messages"
+    icon: ""
+  toggle-queue-alerts:
+    name: "Queue alerts"
+    tooltip: "<gray>See who joins and leaves RTP queues"
+    icon: ""
+  toggle-phantom-spawns:
+    name: "Phantom spawns"
+    tooltip: "<gray>Let phantoms spawn on you"
+    icon: ""
+  toggle-message-style:
+    name: "Modern messages and sounds"
+    tooltip: "<gray>Off for plain chat with no action bars and no sounds"
+    icon: ""

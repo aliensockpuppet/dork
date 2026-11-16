@@ -1,0 +1,12 @@
+motd:
+  max-length: 100
+  require-permission: false
+
+dialog:
+  title: "<green>Set the server MOTD"
+  body:
+    - "<gray>Type the second line of the MOTD. It shows in quotes under the server name"
+    - "<gray>Colors work, like <red>this</red>"
+  input-label: "<gray>MOTD text"
+  set-label: "<green>Set"
+  cancel-label: "<red>Cancel"

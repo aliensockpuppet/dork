@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.aliensockpuppet</groupId>
+    <artifactId>dork</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>Dork</name>
+
+    <modules>
+        <module>backend/DorkCore</module>
+        <module>backend/DorkStats</module>
+        <module>backend/RTPQueue</module>
+        <module>backend/DorkCombat</module>
+        <module>backend/DorkMenu</module>
+        <module>backend/DorkRestart</module>
+        <module>backend/DorkSurvey</module>
+        <module>backend/SpawnPlatform</module>
+        <module>motd-bridge/DorkMotdBackend</module>
+        <module>motd-bridge/DorkMotdVelocity</module>
+    </modules>
+</project>

@@ -1,0 +1,13 @@
+name: DorkCombat
+version: 1.0.0
+main: io.github.aliensockpuppet.dorkcombat.DorkCombatPlugin
+api-version: '1.21'
+author: aliensockpuppet
+description: Combat tagging for the Dork suite. Implements DorkCore's CombatTag.
+depend: [DorkCore]
+softdepend: [DorkStats]
+
+permissions:
+  dorkcombat.bypass:
+    description: Never gets combat-tagged.
+    default: false

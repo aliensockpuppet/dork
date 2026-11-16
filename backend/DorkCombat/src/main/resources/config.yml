@@ -1,0 +1,6 @@
+combat:
+  tag-seconds: 15
+
+  tag-explosions: true
+
+  exempt-kicks: false

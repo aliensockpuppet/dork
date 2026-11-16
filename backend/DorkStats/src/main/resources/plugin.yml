@@ -1,0 +1,17 @@
+name: DorkStats
+version: '1.0.0'
+main: io.github.aliensockpuppet.dorkstats.DorkStatsPlugin
+api-version: '1.21'
+author: aliensockpuppet
+description: Tracks PvP kills, deaths, blocks placed and broken, and playtime. PlaceholderAPI + leaderboards.
+depend: [DorkCore]
+softdepend: [PlaceholderAPI]
+commands:
+  dorkstats:
+    description: DorkStats admin.
+    usage: /<command> reload
+    permission: dorkstats.admin
+permissions:
+  dorkstats.admin:
+    description: Reload DorkStats.
+    default: op

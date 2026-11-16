@@ -1,0 +1,29 @@
+name: RTPQueue
+version: '1.0.0'
+main: io.github.aliensockpuppet.rtpqueue.RTPQueuePlugin
+api-version: '1.21'
+author: aliensockpuppet
+description: Random-teleport PvP matchmaking with fair gear brackets. No GUI.
+depend: [DorkCore]
+commands:
+  rtpqueue:
+    description: Join, switch, or leave a match queue.
+    usage: /<command> [mode|leave]
+    aliases: [rtpq]
+  rtpqueue-admin:
+    description: RTPQueue admin tools.
+    usage: /<command> <reload|queue|clear|inspect>
+  rtp:
+    description: Random teleport to a safe spot. Solo, no match.
+    usage: /rtp
+    aliases: [wild, randomtp]
+permissions:
+  rtpqueue.use:
+    description: Use /rtpqueue.
+    default: true
+  rtpqueue.rtp:
+    description: Use /rtp.
+    default: true
+  rtpqueue.admin:
+    description: Use /rtpqueue-admin.
+    default: op

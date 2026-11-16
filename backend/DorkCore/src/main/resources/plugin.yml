@@ -1,0 +1,113 @@
+name: DorkCore
+version: 1.0.0
+main: io.github.aliensockpuppet.dorkcore.DorkCorePlugin
+api-version: '1.21'
+author: aliensockpuppet
+description: Shared services plus spawn, homes, TPA and back for the Dork suite.
+
+commands:
+  spawn:
+    description: Teleport to the server spawn.
+    usage: /spawn
+  setspawn:
+    description: Set the server spawn to where you stand.
+    usage: /setspawn
+    permission: dorkcore.setspawn
+  back:
+    description: Return to your last location.
+    usage: /back
+  home:
+    description: Teleport to a home.
+    usage: /home [name]
+  sethome:
+    description: Save a home.
+    usage: /sethome [name]
+  delhome:
+    description: Remove a home.
+    usage: /delhome <name>
+  homes:
+    description: List your homes.
+    usage: /homes
+  tpa:
+    description: Ask to teleport to a player.
+    usage: /tpa <player>
+  tpahere:
+    description: Ask a player to teleport to you.
+    usage: /tpahere <player>
+  tpaccept:
+    description: Accept a teleport request.
+    usage: /tpaccept
+    aliases: [tpyes]
+  tpdeny:
+    description: Deny a teleport request.
+    usage: /tpdeny
+    aliases: [tpno]
+  tpcancel:
+    description: Cancel a teleport request you sent.
+    usage: /tpcancel
+  toggle:
+    description: List your toggles, or flip one.
+    usage: /toggle [name]
+  suicide:
+    description: Kill yourself at once.
+    usage: /suicide
+    aliases: [kill]
+  msg:
+    description: Send a private message.
+    usage: /msg <player> <text>
+    aliases: [w, tell, pm, whisper]
+  anonmsg:
+    description: Send a private message without your name.
+    usage: /anonmsg <player> <text>
+    aliases: [amsg]
+  r:
+    description: Reply to your last private message.
+    usage: /r <text>
+    aliases: [reply]
+  ignore:
+    description: Stop seeing private messages from a player.
+    usage: /ignore <player>
+  unignore:
+    description: Stop ignoring a player.
+    usage: /unignore <player>
+  ignorelist:
+    description: List who you ignore.
+    usage: /ignorelist
+
+permissions:
+  dorkcore.spawn:
+    description: Use /spawn.
+    default: true
+  dorkcore.setspawn:
+    description: Use /setspawn.
+    default: op
+  dorkcore.back:
+    description: Use /back.
+    default: true
+  dorkcore.home:
+    description: Use the home commands.
+    default: true
+  dorkcore.tpa:
+    description: Use the teleport-request commands.
+    default: true
+  dorkcore.suicide:
+    description: Use /suicide.
+    default: true
+  dorkcore.msg:
+    description: Use /msg and /r.
+    default: true
+  dorkcore.chat.bypass:
+    description: Skip the chat rate and repeat checks.
+    default: op
+  dorkcore.toggle:
+    description: Use /toggle.
+    default: true
+  dorkcore.anonmsg:
+    description: Use /anonmsg.
+    default: true
+  dorkcore.ignore:
+    description: Use /ignore, /unignore and /ignorelist.
+    default: true
+  dorkcore.homes.unlimited:
+    description: No home cap.
+    default: op

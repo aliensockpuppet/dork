@@ -1,0 +1,16 @@
+DorkCombat is licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0).
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+DorkCombat started as a fork of CelestCombat by Nighter, released under
+CC BY-NC-SA 4.0 (https://hangar.papermc.io/Nighter/CelestCombat). Parts of its
+combat-tag logic, including the explosion-location fallback for end-crystal
+tagging, came from that project by way of the CelestCombat-Xtra fork.
+
+You may share and adapt DorkCombat if you:
+  - give credit to Nighter (CelestCombat) and aliensockpuppet (DorkCombat),
+  - do not use it for commercial purposes, and
+  - release your changes under the same license.
+
+The rest of the Dork suite is MIT licensed. See the LICENSE file at the root of
+the repository. This file applies only to the backend/DorkCombat folder.
